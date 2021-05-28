@@ -17,7 +17,6 @@ $ python run.py -h
 usage: run.py [-h] [--encoder {manual,lstm,inner,inner2}] [--task TASK]
               [--num_splits NUM_SPLITS] [--repeat REPEAT] [--load_manual]
               [--extra_mask_rate EXTRA_MASK_RATE]
-
 optional arguments:
   -h, --help            show this help message and exit
   --encoder {manual,lstm,inner,inner2}
@@ -41,7 +40,6 @@ usage: sweep.py [-h]
                 [--batch_size {4,8,16,24,32} [{4,8,16,24,32} ...]]
                 [--grad_accumulation_steps {1,2,4}]
                 [--extra_mask_rate EXTRA_MASK_RATE] [--sweep_id SWEEP_ID]
-
 optional arguments:
   -h, --help            show this help message and exit
   --task {SST-2,sst-5,mr,cr,mpqa,subj,trec,CoLA,MNLI,MNLI-mm,SNLI,QNLI,RTE-glue,MRPC,QQP}
@@ -58,7 +56,6 @@ optional arguments:
   - Here we only run on the `16-13` split.
 ```
 export CUDA_VISIBLE_DEVICES=0 &&
-
 python3 cli.py \
 --data_dir data/k-shot/SST-2/16-13 \
 --model_type albert \
