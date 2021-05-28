@@ -1,5 +1,5 @@
 # DAPT
-> This reposity contains codes for paper "**_Differentiable Prompt Makes Pre-trained LanguageModels Better Few-shot Learners_**"
+> This reposity contains codes for paper "**_Differentiable Prompt Makes Pre-trained LanguageModels Better Few-shot Learners_**".
 ## Requirements
 - Python=3.6
 - Install dependencies by `pip install -r requirements.txt`.
@@ -27,6 +27,7 @@ optional arguments:
   --load_manual
   --extra_mask_rate EXTRA_MASK_RATE
 ```
+- After training, you can view the results in `output/[task]/[manual,lstm,inner,inner2]/16-[13,21,42,87,100]/result.txt`.
 ### Search for Optimal Hyper Parameters with W&B
 - Note the results reported in our paper follows the same evaluation protocol in paper ["**_Making Pre-trained Language Models Better Few-shot Learners_**"](https://arxiv.org/pdf/2012.15723.pdf), by aggregating the best result of each seed split through parameter grid search.
 - To reproduce the results in our paper, please register at [wandb](https://wandb.ai/) and use api_key to login and run `sweep.py`:
@@ -78,4 +79,3 @@ python3 cli.py \
 --prompt_encoder_type "inner" \
 --two_stage_train
 ```
-- After training, you can view the results in `output/sst-2-inner2/result.txt`.
