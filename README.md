@@ -76,6 +76,6 @@ python3 cli.py \
 --pattern_ids 2 \
 --learning_rate 1e-4 \
 --eval_set "test" \
---prompt_encoder_type "lstm" \
+--prompt_encoder_type "inner" \
 --two_stage_train
 ```
