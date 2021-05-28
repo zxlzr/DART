@@ -62,7 +62,7 @@ python3 cli.py \
 --model_name_or_path roberta-large \
 --cache_dir pretrain/roberta-large \
 --task_name sst-2 \
---output_dir output/sst-2-lstm \
+--output_dir output/sst-2-inner2 \
 --do_eval \
 --do_train \
 --pet_per_gpu_eval_batch_size 8 \
@@ -70,9 +70,9 @@ python3 cli.py \
 --pet_gradient_accumulation_steps 1 \
 --pet_max_seq_length 128 \
 --pet_max_steps 250 \
---pattern_ids 2 \
 --learning_rate 1e-4 \
 --eval_set "test" \
 --prompt_encoder_type "inner" \
 --two_stage_train
 ```
+- After training, you can view the results in `output/sst-2-inner2/result.txt`.
