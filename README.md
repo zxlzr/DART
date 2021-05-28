@@ -54,7 +54,8 @@ optional arguments:
 ### Specified Running
 - To run with specified parameters, you can interact with `cli.py`.
 - Put task `SST-2` as an example (will perform traininng on 1 split at a time):
-```
+
+```bash
 export CUDA_VISIBLE_DEVICES=0 &&
 python3 cli.py \
 --data_dir data/k-shot/SST-2/16-13 \
