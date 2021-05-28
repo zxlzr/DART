@@ -12,6 +12,7 @@
   - In this paper's setting, please specify `encoder=inner2` or `encoder=inner`, where `2` stands for two stage training in paper;
   - For manual prompt setting, `encoder=manual`;
   - For P-Tuning setting in paper ["**_GPT Understands, Too_**"](https://arxiv.org/abs/2103.10385), use `encoder=lstm`.
+
 ```bash
 $ python run.py -h
 usage: run.py [-h] [--encoder {manual,lstm,inner,inner2}] [--task TASK]
@@ -29,6 +30,7 @@ optional arguments:
 ### Search for Optimal Hyper Parameters with W&B
 - Note the results reported in our paper follows the same evaluation protocol in paper ["**_Making Pre-trained Language Models Better Few-shot Learners_**"](https://arxiv.org/pdf/2012.15723.pdf), by aggregating the best result of each seed split through parameter grid search.
 - To reproduce the results in our paper, please register at [wandb](https://wandb.ai/) and use api_key to login and run `sweep.py`:
+
 ```bash
 $ wandb login
 # enter your api_key to login to wandb service...
@@ -54,6 +56,7 @@ optional arguments:
 ### Specified Running
 - To run with specified parameters, you can interact with `cli.py`.
 - Put task `SST-2` as an example (will perform traininng on 1 split at a time):
+
 ```bash
 export CUDA_VISIBLE_DEVICES=0 &&
 python3 cli.py \
