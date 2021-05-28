@@ -50,10 +50,10 @@ optional arguments:
   --extra_mask_rate EXTRA_MASK_RATE
   --sweep_id SWEEP_ID
 ```
-- And you can view the results in detail at [wandb](https://wandb.ai/).
+- And you can view and gather optimal results in detail at [wandb](https://wandb.ai/).
 ### Specified Running
-- To run with specified parameters, you can interact with `cli.py`. Put task `SST-2` as an example:
-  - Here we only run on the `16-13` split.
+- To run with specified parameters, you can interact with `cli.py`.
+- Put task `SST-2` as an example (will perform traininng on 1 split at a time):
 ```
 export CUDA_VISIBLE_DEVICES=0 &&
 python3 cli.py \
