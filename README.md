@@ -1,5 +1,5 @@
 # DAPT
-> This reposity contains codes for paper "**_Differentiable Prompt Makes Pre-trained LanguageModels Better Few-shot Learners_**".
+> This reposity contains codes for paper "**_Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners_**".
 ## Requirements
 - Python=3.6
 - Install dependencies by `pip install -r requirements.txt`.
